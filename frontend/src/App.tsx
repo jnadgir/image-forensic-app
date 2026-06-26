@@ -4,6 +4,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
 import History from './pages/History';
+import Profile from './pages/Profile';
+
 
 // 1. Protected route component — blocks access if not logged in
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
@@ -33,6 +35,7 @@ const AppRoutes = () => {
             {/* public routes */}
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/profile" element={<Profile />} />
 
             {/* protected routes */}
             <Route path="/home" element={
